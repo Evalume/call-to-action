@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato'; 
+  }
+  
+  body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #F6FAFF; 
+  }
+  body, button, input, label {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .container1 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #028CF3;
+    color: wheat;
+  }
+
+  .container2{
+    display: flex;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    gap: 300px;
+  }
+  
+  h1 { 
+    font-size: 2.5em;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    background-color: #f0f0f0; 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  #newsletter p {
+    margin-bottom: 10px;
+  }
+  
+  input[type="email"] {
+    font-size: 1em;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #002244; 
+  }
+  
