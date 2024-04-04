@@ -5,6 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Evalume</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script>
+          function sendMail() {
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail.emailAddr.value))
+            {
+              emailjs.init("fZtOnSTeaLmAHsULx")
+              emailjs.send("service_yivyy9j","template_7n7vkdj",{
+              subject: "This is test",
+              message: "This is test message",
+              });
+            }
+            else{
+              mail.emailAddr.style.color = "red";
+            }   
+          }
+
+        </script>
     </head>
     <body>
         <div class="div">
@@ -74,11 +91,10 @@
                   src="15.png"
                   class="img-7"
                 />
-                <form action="">
-                    <input type="email" class="div-29" placeholder="Email address">
+                <form action="" name="mail">
+                  <input name="emailAddr" placeholder="Email address" class="div-29" size="30" required />
                 </form>
-                
-                <div class="div-30">SIGN ME UP</div>
+                <button class="div-30" onclick="sendMail();">SIGN ME UP</button>
               </div>
             </div>
           </div>
