@@ -5,6 +5,10 @@
     font-family: Lato, sans-serif;
   }
 
+body{
+  overflow: hidden;
+}
+
 .div {
     background-color: #f6faff;
     display: flex;
@@ -253,16 +257,33 @@
     font-weight: 800;
     padding: 11px 17px;
   }
-  .div-19 {
-    stroke-width: 3px;
-    border-color: rgba(2, 140, 243, 1);
-    border-style: solid;
-    border-width: 3px;
-    background-color: rgba(217, 217, 217, 0);
+
+  .selection {
+    height: 25px;
+    width: 25px;
     border-radius: 50%;
-    width: 27px;
-    height: 27px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
   }
+  
+  .checkmark {
+    height: 25px;
+    width: 25px;
+    border: 3px solid rgba(2, 140, 243, 1);
+    background-color: rgba(217, 217, 217, 0);
+    border-radius: 90px;
+    margin-top: 2px;
+  }
+
+  .selection:hover ~ .checkmark {
+    background-color: #C5C5C5;
+  }
+
+  .selection:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+
   .div-20 {
     font-family: Lato, sans-serif;
     flex-grow: 1;

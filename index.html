@@ -6,22 +6,7 @@
         <title>Evalume</title>
         <link rel="stylesheet" href="style.css">
         <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script>
-          function sendMail() {
-            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail.emailAddr.value))
-            {
-              emailjs.init("fZtOnSTeaLmAHsULx")
-              emailjs.send("service_yivyy9j","template_7n7vkdj",{
-              subject: "This is test",
-              message: "This is test message",
-              });
-            }
-            else{
-              mail.emailAddr.style.color = "red";
-            }   
-          }
-
-        </script>
+        <script src="index.js"></script>
     </head>
     <body>
         <div class="div">
@@ -64,20 +49,24 @@
                   </div>
                   <div class="div-17">
                     What superpower would you like to have  for one day?
-                  </div>
+                  </div>      
                   <div class="div-18">
-                    <div class="div-19"></div>
+                    <input type="radio" name="Rland" class="selection ">
+                    <span class="checkmark"></span>
                     <div class="div-20">Invisibility</div>
                   </div>
-                  <div class="div-21">
-                    <div class="div-22"></div>
+                  <div class="div-18">
+                    <input type="radio" name="Rland" class="selection">
+                    <span class="checkmark"></span>
                     <div class="div-23">X-ray vision</div>
                   </div>
-                  <div class="div-24">
-                    <div class="div-25"></div>
+                  <div class="div-18">
+                    <input type="radio" name="Rland" class="selection">
+                    <span class="checkmark"></span>
                     <div class="div-26">Time Manipulation</div>
                   </div>
                 </div>
+              </form>
               </div>
               <img
                 loading="lazy"
@@ -97,6 +86,6 @@
                 <button class="div-30" onclick="sendMail();">SIGN ME UP</button>
               </div>
             </div>
-          </div>
+        </div>
     </body>
 </html>
