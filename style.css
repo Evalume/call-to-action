@@ -5,10 +5,6 @@
     font-family: Lato, sans-serif;
   }
 
-body{
-  overflow: hidden;
-}
-
 .div {
     background-color: #f6faff;
     display: flex;
