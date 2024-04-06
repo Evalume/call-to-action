@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="style.css">
         <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <script src="index.js"></script>
+        </script>
     </head>
     <body>
         <div class="div">
@@ -44,29 +45,25 @@
                 <div class="div-14">
                   <div class="div-15">
                     <div class="div-16">
-                      <progress id="survey" value="32" max="100"> 32% </progress>
+                      <progress id="survey" value="0" max="100"> 32% </progress>
                     </div>
                   </div>
                   <div class="div-17">
-                    What superpower would you like to have  for one day?
-                  </div>      
-                  <div class="div-18">
-                    <input type="radio" name="Rland" class="selection ">
-                    <span class="checkmark"></span>
-                    <div class="div-20">Invisibility</div>
+                    How likely are you to use Evalume to test out your own ideas?
                   </div>
-                  <div class="div-18">
-                    <input type="radio" name="Rland" class="selection">
-                    <span class="checkmark"></span>
-                    <div class="div-23">X-ray vision</div>
-                  </div>
-                  <div class="div-18">
-                    <input type="radio" name="Rland" class="selection">
-                    <span class="checkmark"></span>
-                    <div class="div-26">Time Manipulation</div>
-                  </div>
+                  <button class="anwerbutton" onclick="test(this)">
+                    <div class="circle"></div>
+                    <div class="question">Very likely</div>
+                  </button>
+                  <button class="anwerbutton" onclick="test(this)">
+                    <div class="circle"></div>
+                    <div class="question">Somewhat likely</div>
+                  </button>
+                  <button class="anwerbutton" onclick="test(this)">
+                    <div class="circle"></div>
+                    <div class="question">Not very likely</div>
+                  </button>
                 </div>
-              </form>
               </div>
               <img
                 loading="lazy"
@@ -86,6 +83,6 @@
                 <button class="div-30" onclick="sendMail();">SIGN ME UP</button>
               </div>
             </div>
-        </div>
+          </div>
     </body>
 </html>
