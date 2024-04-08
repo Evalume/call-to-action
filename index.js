@@ -23,7 +23,7 @@ function sendMail() {
       emailjs.send("service_yivyy9j","template_7n7vkdj",{
       send_to: mail.emailAddr.value.toString(),
       subject: "Welcome to Evalume",
-      message: "Hello you, \n \n We are thrilled to welcome you aboard Evalume – your newest companion on the path to insightful and effective evaluations. By choosing Evalume, you have taken a significant step towards unlocking comprehensive analysis and streamlined evaluations like never before. ",
+      message: "test",
       });
     }
     else{
