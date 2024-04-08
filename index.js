@@ -28,7 +28,7 @@ function sendMail() {
                 We're thrilled to welcome you aboard Evalume – your newest companion on the path to insightful and effective evaluations. By choosing Evalume, you’ve taken a significant step towards unlocking comprehensive analysis and streamlined evaluations like never before.
                 \n
                 We're Here for You \n
-                Got questions? Our support team is just an email away at evalumeproject@gmail.com. Whether you're seeking advice or need help navigating Evalume, we're here to ensure your experience is seamless and rewarding.
+                Got questions? Our support team is just an email away at evalumeproject@gmail.com.
         ",
       });
     }
